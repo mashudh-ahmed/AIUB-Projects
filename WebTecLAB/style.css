@@ -1,0 +1,410 @@
+/* Global Styling */
+html, body {
+    height: auto;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #f9f9f9;
+    --border-radius: 5px;
+}
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+    }
+}
+.box-image:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.container-box {
+    
+    padding: 10px;
+    margin: 5px auto;
+    width: 1160px;
+    height: 2300px;
+    border: 2px solid #ccc;
+    background-color: #efefef;
+}
+
+.top-image {
+    width: 1155px; 
+    height: 100px;
+    border: 2px solid #ccc; 
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); ;
+
+}
+
+
+/* Wrapper and Boxes */
+.wrapper {
+   
+    display: flex;
+    align-items: flex-start;
+    gap: 10px; 
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+/* First Section */
+.first {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.box1 {
+    width: 2000px;
+    height: 500px; /* Set the height to limit the visible area */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;  /* Make the corners rounded */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: auto; /* Prevent horizontal scrolling */
+    margin: 20px auto; /* Center the box */
+    max-width: 1100px; /* Ensure it doesn't expand too much */
+}
+
+/* Table Styling for Box1 */
+.box1 table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.box1 th, .box1 td {
+    padding: 12px 15px;
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+}
+
+.box1 th {
+    background-color: #4CAF50; /* Green background for header */
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase; /* Make header text uppercase */
+}
+
+.box1 tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light grey for even rows */
+}
+
+.box1 tr:hover {
+    background-color: #e8f5e9; /* Light green for hover */
+    cursor: pointer;
+}
+
+/* Border for cells */
+.box1 th, .box1 td {
+    border: 1px solid #ddd; /* Add borders to cells */
+}
+
+ 
+
+/* Second Section */
+.second {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.box2 {
+    width: 147px;
+    height: 185px;
+ 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Optional: Add shadow */
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.box-image {
+    max-width: 100%; /* Ensure the image doesn't overflow horizontally */
+    max-height: 100%; /* Ensure the image doesn't overflow vertically */
+    object-fit: cover; /* Ensures the image is cropped to fit the box */
+}
+
+/* Third Section */
+.third {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+/* Box3 Styling */
+.box3 {
+    width: 400px;
+    height: 600px;
+
+    padding: 20px;
+
+    background-color: #f9f9f9;  /* Light grey background */
+    border-radius: 10px;  /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+   
+}
+
+/* Table Styling for Box3 */
+.box3 table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    background-color: #fff;
+    
+}
+
+.box3 th, .box3 td {
+    padding: 12px 15px;
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+}
+
+.box3 th {
+    background-color: #4CAF50; /* Green background for header */
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase; /* Uppercase header text */
+}
+
+.box3 tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light grey for even rows */
+}
+
+.box3 tr:hover {
+    background-color: #e8f5e9; /* Light green for hover effect */
+    cursor: pointer;
+}
+
+/* Border for cells */
+.box3 th, .box3 td {
+    border: 1px solid #ddd; /* Light border for cells */
+}
+
+.seventh {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: auto;
+}
+
+.box7 {
+    width: 220px;
+    height: 650;
+    padding: 20px;
+
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+    
+
+}
+
+.box8 {
+    width: 640px;
+    height: 660px;
+    padding: 20px;
+   
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+
+
+.box8 h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Table Styling */
+.box8 table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.box8 th, .box8 td {
+    padding: 12px 15px;
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+}
+
+.box8 th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.box8 tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.box8 tr:hover {
+    background-color: #e8f5e9;
+    cursor: pointer;
+}
+
+/* Border for cells */
+.box8 th, .box8 td {
+    border: 1px solid #ddd;
+}
+
+
+.box9 {
+
+    width: 160px;
+    height: 650;
+    padding: 20px;
+
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+
+/* Box10 Styling */
+.box10 {
+    width: 668px;
+    height: 600px;
+    padding: 20px;
+  
+    background-color: #f9f9f9;  /* Light grey background */
+    border-radius: 10px;  /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+}
+
+/* Table Styling for Box10 */
+.box10 table {
+    width: 100%;
+    border-collapse: collapse;
+    
+    background-color: #fff;
+}
+
+.box10 th, .box10 td {
+    padding: 12px 15px;
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+}
+
+.box10 th {
+    background-color: #4CAF50; /* Green background for header */
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase; /* Uppercase header text */
+}
+
+.box10 tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light grey for even rows */
+}
+
+.box10 tr:hover {
+    background-color: #e8f5e9; /* Light green for hover effect */
+    cursor: pointer;
+}
+
+/* Border for cells */
+.box10 th, .box10 td {
+    border: 1px solid #ddd; /* Light border for cells */
+}
+
+
+
+/* Edit Form Styling */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Form Styling */
+.form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
